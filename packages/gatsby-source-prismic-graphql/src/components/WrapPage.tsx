@@ -1,4 +1,4 @@
-import { getIsolatedQuery } from 'gatsby-source-graphql-universal';
+import { getIsolatedQuery } from '@prismicio/gatsby-source-graphql-universal';
 
 import pick from 'lodash/pick';
 import get from 'lodash/get';

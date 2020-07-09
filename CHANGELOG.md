@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.5](https://github.com/prismicio/gatsby-source-prismic-graphql/compare/v3.6.3...v3.6.5) (2020-06-26)
+
+**Note:** Version bump only for package root
+
+## [3.6.3](https://github.com/prismicio/gatsby-source-prismic-graphql/compare/v3.6.2...v3.6.3) (2020-06-26)
+
+### Bug Fixes
+
+- preview not working ([#193](https://github.com/prismicio/gatsby-source-prismic-graphql/issues/193)) ([3cb8d19](https://github.com/prismicio/gatsby-source-prismic-graphql/commit/3cb8d19536faaf100c5175852fbd566af145b0f3)), closes [#143](https://github.com/prismicio/gatsby-source-prismic-graphql/issues/143) [#154](https://github.com/prismicio/gatsby-source-prismic-graphql/issues/154)
+- stripSharp behavior during preview mode ([#127](https://github.com/prismicio/gatsby-source-prismic-graphql/issues/127)) ([9ba1175](https://github.com/prismicio/gatsby-source-prismic-graphql/commit/9ba117553ac03c056b201187c708b214791a5068))
+
+### Features
+
+- attp 3 ([57f97e2](https://github.com/prismicio/gatsby-source-prismic-graphql/commit/57f97e262ff695ccd7f751570862d774d55f9360))
+
 ## [3.6.2](https://github.com/birkir/gatsby-source-prismic-graphql/compare/v3.6.1...v3.6.2) (2020-04-28)
 
 **Note:** Version bump only for package root

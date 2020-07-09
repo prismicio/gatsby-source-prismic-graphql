@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-prismic-graphql`,
+      resolve: `@prismicio/gatsby-source-prismic-graphql`,
       options: {
         repositoryName: 'gatsby-demo-site',
         pages: [

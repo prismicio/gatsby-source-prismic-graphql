@@ -1,8 +1,9 @@
 import React from 'react';
 import { RichText } from 'prismic-reactjs';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { linkResolver } from '../prismic/linkResolver';
 import get from 'lodash/get';
+import Layout from './layout';
 
 export const query = graphql`
   query BlogPost($uid: String) {
@@ -32,10 +33,15 @@ const BlogPost = props => {
   }
 
   return (
-    <div id="blogpost">
-      <h1>{RichText.asText(data.title)}</h1>
-      {RichText.render(data.body, linkResolver)}
-    </div>
+    <Layout>
+      <div id="blogpost">
+        <h1>{RichText.asText(data.title)}</h1>
+        {RichText.render(data.body, linkResolver)}
+        <div>
+          <Link to="/">Return</Link>
+        </div>
+      </div>
+    </Layout>
   );
 };
 

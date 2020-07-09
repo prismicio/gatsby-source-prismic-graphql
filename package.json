@@ -8,15 +8,8 @@
     ]
   },
   "scripts": {
-    "setup": "lerna bootstrap; yarn run link; yarn build",
-    "link": "lerna exec --no-private -- yarn link",
-    "unlink": "lerna exec --no-private -- yarn unlink",
-    "clean": "lerna run clean",
-    "start": "lerna run start --ignore \"@examples/*\" --stream",
-    "build": "lerna run build --ignore \"@examples/*\"",
-    "release": "lerna version --force-publish",
     "prettier": "prettier --write '**/*.{json,md,js,jsx,ts,tsx}'",
-    "test": "lerna run build --scope \"@examples/*\"",
+    "test": "yarn workspaces run clean && yarn workspaces run test",
     "test:prettier": "prettier --list-different '**/*.{json,md,js,jsx,ts,tsx}'"
   },
   "husky": {
@@ -45,7 +38,6 @@
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
     "husky": "^1.3.1",
-    "lerna": "^3.13.1",
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
     "rimraf": "^2.6.3",

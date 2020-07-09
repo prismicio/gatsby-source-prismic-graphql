@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import { withPreview } from 'gatsby-source-prismic-graphql';
+import { withPreview } from '@prismicio/gatsby-source-prismic-graphql';
 import { RichText } from 'prismic-reactjs';
 import { ArticleFragment } from '../fragments/ArticleFragment';
 
@@ -34,7 +34,10 @@ const renderArticles = data => {
 export const Articles = () => {
   return (
     <>
-      <StaticQuery query={query} render={withPreview(renderArticles, query, [ArticleFragment])} />
+      <StaticQuery
+        query={`${query}`}
+        render={withPreview(renderArticles, query, [ArticleFragment])}
+      />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { graphql, Link } from 'gatsby';
-import { linkResolver } from 'gatsby-source-prismic-graphql';
+import { linkResolver } from '@prismicio/gatsby-source-prismic-graphql';
 import { RichText } from 'prismic-reactjs';
 import React from 'react';
 import Layout from '../components/layout';
