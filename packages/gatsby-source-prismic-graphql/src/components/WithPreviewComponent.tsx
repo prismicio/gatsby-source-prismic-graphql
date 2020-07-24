@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import { WrapPage } from '@prismicio/gatsby-source-prismic-graphql';
+import { WrapPage } from './WrapPage';
 
 export type WithPreviewProps<T> = PropsWithChildren<{
   data: T;
