@@ -14,8 +14,6 @@ import { existsSync, mkdirSync } from 'fs';
 exports.onPreBootstrap = () => {
   const dir = './.cache/caches/@prismicio/gatsby-source-prismic-graphql';
 
-  console.log('tesing...');
-
   if (existsSync(dir) === false) {
     mkdirSync(dir, { recursive: true });
   }
