@@ -1,5 +1,4 @@
 import path from 'path';
-import querystring from 'querystring';
 import { SourceNodesArgs, NodeInput } from 'gatsby';
 import { getRootQuery } from '@prismicio/gatsby-source-graphql-universal/getRootQuery';
 import {
@@ -14,6 +13,7 @@ import { existsSync, mkdirSync } from 'fs';
 
 exports.onPreBootstrap = () => {
   const dir = './.cache/caches/@prismicio/gatsby-source-prismic-graphql';
+
   if (existsSync(dir) === false) {
     mkdirSync(dir, { recursive: true });
   }
@@ -344,7 +344,7 @@ exports.createResolvers = (
 
             if (url) {
               return createRemoteFileNode({
-                url: querystring.unescape(url).replace(/\?.*$/g, ''),
+                url,
                 store,
                 cache,
                 createNode,
