@@ -48,7 +48,7 @@
   },
   "peerDependencies": {
     "gatsby": "^2.24.11",
-    "react": "^16.0.0"
+    "react": "^16.0.0 || ^17.0.0"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
